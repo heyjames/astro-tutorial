@@ -1,10 +1,12 @@
 html {
-    background-color: #f1f5f9;
+    background-color: #dbd7c6;
+    color: #000000;
     font-family: sans-serif;
+    font-size: 1.1em;
   }
   html.dark {
-    background-color: #0d0950;
-    color: #fff;
+    background-color: #1f1f1f;
+    color: #d2d2d2;
   }
   
   .dark .nav-links a {
@@ -28,6 +30,14 @@ html {
     font-size: 2.5rem;
   }
 
+  a {
+    color: #5454ff;
+  }
+
+  a:visited {
+    color: #aa4aff;
+  }
+
 /* nav styles */
 
 .hamburger {
@@ -40,7 +50,7 @@ html {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: #bf7900;
 }
 
 .nav-links {
@@ -62,14 +72,42 @@ html {
     text-transform: uppercase;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-    background-color: #ff9776;
-}
-
 .expanded {
     display: unset;
 }
+
+.container-title-date {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.cdt {
+  display: flex;
+  height: auto;
+  align-items: flex-start;
+}
+
+.cdt div {
+  padding-bottom: 8px;
+}
+
+.lc {
+  flex-shrink: 0;
+  width: 200px;
+  /* background-color: lightblue; */
+}
+
+.mc {
+  flex-shrink: 0;
+  width: 140px;
+}
+
+.rc {
+  flex-grow: 1;
+  /* background-color: lightgreen; */
+}
+
 
 @media screen and (min-width: 636px) {
     .nav-links {
@@ -83,6 +121,10 @@ html {
     .nav-links a {
         display: inline-block;
         padding: 15px 20px;
+    }
+
+    .nav-links a.active {
+      color: #007BFF;  /* Match active color */
     }
 
     .hamburger {

@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectPost from '../components/ProjectPost.astro';
+const allPosts = await Astro.glob('../pages/projects/*.md');
+const pageTitle = "";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <!-- <p>This is the projects page.</p> -->
+    <div>
+        {allPosts.map(post => <ProjectPost url={post.url} title={post.frontmatter.title} dates={post.frontmatter.dates} type={post.frontmatter.type} />).reverse()}
+    </div>
+</BaseLayout>

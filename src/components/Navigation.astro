@@ -4,5 +4,24 @@
 <div class="nav-links">
     <a href="/">Home</a>
     <a href="/about/">About</a>
+    <a href="/projects/">Projects</a>
     <a href="/blog/">Blog</a>
 </div>
+<script>
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    // Loop through links and add 'active' class to the current page link
+    navLinks.forEach(link => {
+        if (link instanceof HTMLAnchorElement) {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        }
+    });
+</script>
+<!--<ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/projects/">Projects</a></li>
+    <li><a href="/blog/">Blog</a></li>
+</ul>-->
