@@ -2,19 +2,22 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Insurgency'
 pubDate: 2024-09-06
-description: ''
+description: 'Video Game Dedicated Server'
+id: 1
 type: 'game server'
+language: 'linux'
 dates: 'Nov 2015 - Nov 2017'
 # image:
 #     url: 'https://docs.astro.build/assets/full-logo-light.png'
 #     alt: 'The full Astro logo.'
+github_url: 'https://github.com/heyjames/insurgency-dedicated-server'
 tags: ["Insurgency", "Servers", "Video Games"]
 ---
 Insurgency is a multiplayer military shooter. Although the video game can be fast-paced, I became interested in a slower co-op experience. To pursue this, I learned to operate server software on a virtual private server and built a small community of players focused on teamwork, balancing fun with realism, and server stability.
 
 Players can join matches hosted on official servers hosted by the developers or on community-run dedicated servers, which allow for custom game modes, maps, increased player slots, weapon modifications, and time limit adjustments that affect various stages of the core game loop. Server customization was key to attracting new players, while keeping existing players happy.
 
-While some server customizations can be as simple as modifying a single line of text in a configuration file, others like changing the player's loadout is made more complex by the lack of documentation. All the changes I added required assistance from other server operators, player-submitted mods, trial and error, and careful analysis.
+While some server customizations can be as simple as modifying a single line of text in a configuration file, others like changing the player's loadout is made more complex by the lack of documentation. All the changes I added required assistance from other server operators, player-submitted mods, trial and error, and careful analysis of various file types.
 
 ## Tools
 - Ubuntu Server
